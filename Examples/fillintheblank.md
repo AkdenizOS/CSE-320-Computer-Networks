@@ -35,75 +35,132 @@ called demultiplexing.
 21. 
 **Network Layer (Ağ Katmanı - Yönlendirme ve IP)**
 21. The process of moving packets from a router's input to the appropriate router output is called ________.
+
 22. The algorithm that determines the end-to-end path taken by packets from source to destination is called ________.
+
 23. The length of an IPv4 address is ________ bits, whereas an IPv6 address is 128 bits.
+
 24. A network protocol that dynamically assigns temporary IP addresses to hosts when they join a local network is called ________.
+
 25. The ________ protocol translates private IP addresses in a local network to a single public IP address for Internet access.
+
 26. The algorithm that calculates the shortest path from a single source node to all other nodes using global topology information is known as ________ algorithm.
+
 
 **Link Layer & LANs (Bağlantı Katmanı ve Yerel Ağlar)**
 27. While the network layer uses IP addresses to route packets, the link layer uses ________ addresses to deliver frames to physically connected interfaces.
+
 28. The ________ protocol is used to translate an IP address into its corresponding physical (MAC) address.
+
 29. Error detection at the link layer is commonly implemented using CRC, which stands for Cyclic ________ Check.
+
 30. Ethernet uses the ________ multiple access protocol to listen to the channel and handle collisions on a shared medium.
+
 31. A link-layer ________ is a plug-and-play device that transparently forwards frames based on MAC destination addresses and builds its own forwarding table dynamically.
+
 32. In network switches, a technique used to create multiple logical broadcast domains within a single physical infrastructure is called ________.
 
+
 **Wireless & Mobile Networks (Kablosuz ve Mobil Ağlar)**
+
 33. 802.11 wireless LANs (Wi-Fi) use the ________ protocol to avoid collisions, rather than detecting them like Ethernet does.
+
 34. In wireless networks, the situation where two nodes can both communicate with a central access point but cannot hear each other's transmissions is called the ________ terminal problem.
+
 35. As a radio signal propagates through space or matter, its strength decreases; this phenomenon is known as ________ loss (or signal attenuation).
 
+
 **TCP/UDP & Congestion Control (Taşıma Katmanı - Sınav Dokümanlarından)**
+
 36. In the TCP congestion control mechanism, the initial phase where the congestion window size grows exponentially is known as TCP ________.
+
 37. A TCP segment loss can be detected either by a timeout or by the receipt of three ________ ACKs.
+
 
 **Packet Tracer / CLI Commands (Final Sınavı Dokümanından)**
 38. In a Cisco router, the command `enable` is used to enter into ________ EXEC mode.
+
 39. To configure the router globally, you must enter into global ________ mode.
 
+
 **Chapter 1: Network Core, Delay & Architecture (Ağ Temelleri ve Gecikme)**
+
 40. The time required to push all of a packet's bits into the link is called ________ delay.
+
 41. The time required for a bit to travel from the beginning of the physical link to the next router is called ________ delay.
+
 42. A ________ attack makes network resources unavailable to legitimate users by overwhelming the resource with a flood of bogus traffic.
+
 43. In the OSI reference model, the ________ layer is responsible for allowing applications to interpret the meaning of data, such as encryption and compression.
+
 44. The rate (in bits/sec) at which bits are currently being transferred between sender and receiver is called the ________.
 
+
 **Chapter 4: Network Layer & Routing (Ağ Katmanı ve Yönlendirme)**
+
 45. In a router's architecture, the ________ fabric physically moves a packet from an input port to the appropriate output port.
+
 46. The maximum amount of data that a link-layer frame can carry, which dictates if an IP datagram needs fragmentation, is called the ________ (Maximum Transmission Unit).
+
 47. IPv4 addresses are 32 bits long and are typically written in ________-dotted notation.
+
 48. The network-layer protocol used by routers and hosts to communicate error information, such as "destination network unreachable", is called ________.
+
 49. Distance Vector (DV) routing algorithms are based on the ________ equation (dynamic programming).
+
 50. A well-known issue with Distance Vector algorithms, where nodes repeatedly exchange increasing cost updates when a link fails, is called the "count-to-________" problem.
+
 51. ________ is a routing protocol that uses a Link-State (LS) algorithm and floods routing information to all routers in the Autonomous System (AS).
+
 52. The inter-domain routing protocol that acts as the "glue" holding the entire Internet together is called ________.
 
+
 **Chapter 5: Link Layer & LANs (Bağlantı Katmanı ve Yerel Ağlar)**
+
 53. The link layer encapsulates a network-layer datagram into a ________ before transmitting it over the link.
+
 54. A MAC address is ________ bits long and is permanently burned into the ROM of the Network Interface Card (NIC).
+
 55. Ethernet MAC addresses are usually written in base-16, which is known as ________ notation.
+
 56. In a shared multiple access channel, when two or more nodes transmit frames at the exact same time, a ________ occurs.
+
 57. Slotted ALOHA and CSMA/CD are examples of ________ access MAC protocols, where nodes don't take turns but try to transmit whenever they have data.
+
 58. A link-layer switch builds its MAC address table automatically and dynamically using a process called ________ learning.
+
 59. In an Ethernet frame, the 8-byte ________ field is used to wake up the receiving adapters and synchronize their clocks.
 
-**Chapter 6: Wireless & Mobile Networks (Kablosuz Ağlar)**
+
+**Chapter 6: Wireless & Mobile Networks (Kablosuz Ağlar)**:
+
 60. In 802.11 (Wi-Fi) infrastructure networks, the base station is also known as an Access ________.
+
 61. To reduce collisions caused by the hidden terminal problem, 802.11 networks can use small reservation packets called RTS (Request to Send) and ________ (Clear to Send).
+
 62. In cellular networks, the process of routing a call to a new base station without interrupting the ongoing connection is called ________.
 
+
 **Transport Layer & TCP Congestion (Taşıma Katmanı ve Tıkanıklık Kontrolü)**
+
 63. The maximum amount of unacknowledged data a TCP sender can have in flight is limited by the ________ window (cwnd).
+
 64. In TCP congestion control, the sender transitions from the "slow start" phase to the "congestion avoidance" phase when the window size reaches a variable called ________.
+
 65. The TCP fast ________ mechanism allows a sender to retransmit a missing segment before the timer expires if it receives 3 duplicate ACKs.
+
 
 **General Protocols (Genel Protokoller ve Kavramlar)**
 66. The Domain Name System (DNS) is primarily used to translate human-readable hostnames into ________ addresses.
+
 67. While HTTP and FTP use TCP for reliable data transfer, DNS typically uses ________ as its underlying transport layer protocol for faster, connectionless queries.
+
 68. When a host wants to dynamically obtain an IP address upon joining a network, it broadcasts a ________ Discover message.
+
 69. A ________ router allows multiple devices on a local network to share a single public IP address.
+
 70. In an IP address, a subnet mask is used to separate the network part from the ________ part.
+
 
 ---
 
